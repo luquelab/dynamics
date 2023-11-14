@@ -1,0 +1,47 @@
+{
+    "observer": {
+        "observational_time": {
+            "unit": "h",
+            "value": 10
+        },
+        "system_size": {
+            "unit": "ml",
+            "value": 1
+        }
+    },
+    "variables": {
+        "Time": {
+            "symbol": "t",
+            "unit": "h",
+            "initial_value": 0,
+            "independent": true
+        },
+        "Bacteria": {
+            "symbol": "B",
+            "unit": "cells/ml",
+            "initial_value": 1,
+            "independent": false,
+            "mechanisms": {
+                "growth": "+r*B",
+                "predation": "-aB*B*P"
+            }
+        }
+    },
+    "parameters": {
+        "growth_constant": {
+            "symbol": "r",
+            "unit": "1/h",
+            "value": 1
+        },
+        "infection_constant_to_B": {
+            "symbol": "aB",
+            "unit": "ml/(h*phage)",
+            "value": 1
+        },
+        "phage_concentration": {
+            "symbol": "P",
+            "unit": "phages/ml",
+            "value": 2
+        }
+    }
+}
