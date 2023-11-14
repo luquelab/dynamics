@@ -1,0 +1,67 @@
+{
+    "observer": {
+        "observational_time": {
+            "unit": "h",
+            "value": 10
+        },
+        "system_size": {
+            "unit": "ml",
+            "value": 1
+        }
+    },
+    "variables": {
+        "Time": {
+            "symbol": "t",
+            "unit": "h",
+            "initial_value": 0,
+            "independent": true
+        },
+        "Bacteria": {
+            "symbol": "B",
+            "unit": "cells/ml",
+            "initial_value": 1,
+            "independent": false,
+            "mechanisms": {
+                "growth": "+r*B",
+                "predation": "-aB*B*P"
+            }
+        },
+        "Phage": {
+            "symbol": "P",
+            "unit": "phage/ml",
+            "initial_value": 1,
+            "independent": false,
+            "mechanisms": {
+                "burst": "+c*aP*B*P",
+                "decay": "-m*P"
+            }
+        }
+    },
+    "parameters": {
+        "growth_constant": {
+            "symbol": "r",
+            "unit": "1/h",
+            "value": 1
+        },
+        "infection_constant_to_B": {
+            "symbol": "aB",
+            "unit": "ml/(h*phage)",
+            "value": 1
+        },
+        "burst_size": {
+            "symbol": "c",
+            "unit": "phage",
+            "value": 3
+        },
+        "infection_constant_from_P": {
+            "symbol": "aP",
+            "unit": "ml/(h*cell)",
+            "value": 1
+        },
+        "decay_constant": {
+            "symbol": "m",
+            "unit": "1/h",
+            "value": 0.1
+        }
+    }
+}
