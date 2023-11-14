@@ -13,7 +13,7 @@ This repository includes the codes and notebooks to simulate a dynamic system de
 + `legacy_code_PerCapFiniT.py`: This Python file contains code that could help repurpose some parts of the current method implemented in the Jupyter Notebook.
 
 # How to obtain results
-In the current version, the methodology has been implemented in a [Colab notebook](https://github.com/luquelab/dynamics/blob/Colab/dynamic_regimes.ipynb), which includes a Quick-Start Guide.
+In the current version, the methodology has been implemented in a [Colab notebook](https://github.com/luquelab/dynamics/blob/main/dynamic_regimes.ipynb), which includes a Quick-Start Guide.
 
 # Acknowledgements
 The notebook is based on ongoing research on transient dynamics by the [Luque lab](https://www.luquelab.com/) and [Rohwer lab](https://coralandphage.org/) with scientists [Sergio Cobo-Lopez](https://scholar.google.com/citations?user=m6m1HV4AAAAJ&hl=en) and [Matthew Witt](https://www.linkedin.com/in/matthew-witt-45b37159/) as first authors of the foundational research contribution. PI [Antoni Luque](https://scholar.google.com/citations?user=ytvnI68AAAAJ&hl=en) led the development of the [Colab notebook software](https://github.com/luquelab/dynamics).
